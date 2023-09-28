@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "authors",
+  "collectionName": "libraries",
   "info": {
-    "singularName": "author",
-    "pluralName": "authors",
-    "displayName": "Author",
+    "singularName": "library",
+    "pluralName": "libraries",
+    "displayName": "Library",
     "description": ""
   },
   "options": {
@@ -13,14 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string",
-      "pluginOptions": {}
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     },
     "books": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::book.book",
-      "mappedBy": "authors"
+      "inversedBy": "libraries"
     }
   }
 }

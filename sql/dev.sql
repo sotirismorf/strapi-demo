@@ -53,3 +53,39 @@ VALUES
 (17, 17, 6, 1, 2),
 (18, 18, 6, 1, 3)
 ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO libraries
+(id, name, description, created_at, updated_at, created_by_id, updated_by_id)
+VALUES
+(1, 'The Library Of Congress', 'The Library of Congress is the nation''s oldest federal cultural institution, and it serves as the research arm of Congress.', localtimestamp(3), localtimestamp(3), 1, 1),
+(2, 'New York Public Library', 'The New York Public Library is a public library system in New York City.', localtimestamp(3), localtimestamp(3), 1, 1)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO libraries_books_links
+(id, library_id, book_id, book_order, library_order)
+VALUES
+(1,  1, 1,  1,  1),
+(2,  1, 2,  2,  1),
+(3,  1, 3,  3,  1),
+(4,  1, 4,  4,  1),
+(5,  1, 5,  5,  1),
+(6,  1, 6,  6,  1),
+(7,  1, 7,  7,  1),
+(8,  1, 8,  8,  1),
+(9,  1, 9,  9,  1),
+(10, 1, 10, 10, 1),
+(11, 1, 11, 11, 1),
+(12, 1, 12, 12, 1),
+(13, 2, 7,  1,  2),
+(14, 2, 8,  2,  2),
+(15, 2, 9,  3,  2),
+(16, 2, 10, 4,  2),
+(17, 2, 11, 5,  2),
+(18, 2, 12, 6,  2),
+(19, 2, 13, 7,  2),
+(20, 2, 14, 8,  2),
+(21, 2, 15, 9,  2),
+(22, 2, 16, 10, 2),
+(23, 2, 17, 11, 2),
+(24, 2, 18, 12, 2)
+ON CONFLICT (id) DO NOTHING;

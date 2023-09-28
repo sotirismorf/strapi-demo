@@ -78,6 +78,12 @@
         }
       },
       "type": "text"
+    },
+    "libraries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::library.library",
+      "mappedBy": "books"
     }
   }
 }
