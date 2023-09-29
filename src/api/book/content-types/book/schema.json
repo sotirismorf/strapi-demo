@@ -32,23 +32,6 @@
         }
       }
     },
-    "copiesTotal": {
-      "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "min": 1
-    },
-    "copiesAvailable": {
-      "type": "integer",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "authors": {
       "type": "relation",
       "relation": "manyToMany",
@@ -79,11 +62,11 @@
       },
       "type": "text"
     },
-    "libraries": {
+    "quantities": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::library.library",
-      "mappedBy": "books"
+      "relation": "oneToMany",
+      "target": "api::quantity.quantity",
+      "mappedBy": "book"
     }
   }
 }

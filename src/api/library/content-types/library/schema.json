@@ -18,11 +18,11 @@
     "description": {
       "type": "text"
     },
-    "books": {
+    "quantities": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::book.book",
-      "inversedBy": "libraries"
+      "relation": "oneToMany",
+      "target": "api::quantity.quantity",
+      "mappedBy": "library"
     }
   }
 }
