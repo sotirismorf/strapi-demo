@@ -1,5 +1,6 @@
 node_modules
 public/uploads/*
+sql
 
 .docker-compose.yml
 .editorconfig
@@ -7,3 +8,5 @@ public/uploads/*
 .env.example
 .git
 .tmp
+
+Makefile

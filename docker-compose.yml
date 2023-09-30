@@ -2,7 +2,7 @@ version: "3"
 services:
   strapi:
     container_name: strapi
-    image: strapi:upstream2
+    image: sotirismorf/aperta:0.1.1
     restart: unless-stopped
     env_file: .env
     environment:
