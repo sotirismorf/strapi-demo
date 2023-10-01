@@ -19,10 +19,12 @@
       "inversedBy": "quantities"
     },
     "copies_total": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "copies_available": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "library": {
       "type": "relation",
