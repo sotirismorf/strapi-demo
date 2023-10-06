@@ -4,7 +4,7 @@
   "info": {
     "singularName": "book",
     "pluralName": "books",
-    "displayName": "Βιβλία",
+    "displayName": "Έντυπα",
     "description": ""
   },
   "options": {
@@ -55,6 +55,19 @@
       "relation": "manyToOne",
       "target": "api::publisher.publisher",
       "inversedBy": "books"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Βιβλίο",
+        "Μπροσούρα",
+        "Περιοδικό"
+      ]
+    },
+    "isbn": {
+      "type": "integer",
+      "unique": true,
+      "required": false
     }
   }
 }
