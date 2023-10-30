@@ -65,7 +65,7 @@
       ]
     },
     "isbn": {
-      "type": "integer",
+      "type": "biginteger",
       "unique": true,
       "required": false
     }
