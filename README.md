@@ -1,6 +1,6 @@
 # Strapi for managing Library catalogues
 
-This project is aimed to provide an easy and modern way to manage a library
+This strapi project is aimed to provide an easy and modern way to manage a library
 catalogue.
 
 - REST API

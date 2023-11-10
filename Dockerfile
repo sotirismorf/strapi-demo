@@ -1,10 +1,9 @@
 # Build stage
 FROM node:18-alpine as build
 RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev git > /dev/null 2>&1
-ARG NODE_ENV=production
-ENV NODE_ENV=${NODE_ENV}
-ARG PUBLIC_URL=https://example.com
-ENV PUBLIC_URL=${PUBLIC_URL}
+
+ENV NODE_ENV=production
+ENV PUBLIC_URL=https://library.gizmolab.net/strapi
 
 WORKDIR /opt/
 COPY package.json yarn.lock ./
