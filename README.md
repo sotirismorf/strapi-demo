@@ -12,6 +12,14 @@ catalogue.
 
 [Strapi REST API docs](https://docs.strapi.io/dev-docs/api/rest)
 
+| Τίτλος          | API Endpoint    | Περιγραφή |
+| --------------- | --------------- | --------- |
+| Βιβλιοθήκες     | `/libraries`    |
+| Διαθεσιμότητες  | `/quantities`   | Ένα `quantity` περιέχει την εξής πληροφορία: n έντυπα από το X βιβλίο υπάρχουν στην Y βιβλιοθήκη, και από αυτά, τα m είναι διαθέσιμα
+| Εκδότες         | `/publishers`   |
+| Έντυπα          | `/books`        |
+| Συγγραφείς      | `/authors`      |
+
 ### Books
 
 |     Column     |              Type              | Collation | Nullable |              Default
@@ -50,3 +58,11 @@ curl https://library.gizmolab.net/strapi/api/books \
   ]
 }
 ```
+
+### Authors
+
+### Publishers
+
+### Quantities
+
+### Libraries
